@@ -1,0 +1,19 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/Bank
+    username: postgres
+    password: kitanax
+  jpa:
+    hibernate:
+      show_sql: true
+      format_sql: true
+      ddl-auto: update
+logging:
+  level:
+    net.ttddyy.dsproxy.listener: debug
+    org:
+      hibernate:
+        type: trace
+      hibernate.SQL: debug
+  file:
+    name: src/main/resources/dblogs.txt
